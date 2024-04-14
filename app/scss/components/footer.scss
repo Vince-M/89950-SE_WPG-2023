@@ -1,0 +1,12 @@
+@use '../util' as *;
+
+.footer {
+  background-color: var(--darkGreen);
+  width: 100%;
+  height: rem(20);
+
+  h1 {
+    font-size: rem(20);
+    color: var(--black);
+  }
+}
