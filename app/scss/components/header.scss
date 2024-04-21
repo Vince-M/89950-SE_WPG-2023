@@ -1,1 +1,10 @@
 @use '../util' as *;
+
+.header {
+  background-color: var(--nwcGreen);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: sticky;
+  width: 100%;
+}
