@@ -5,10 +5,11 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  position: absolute;
+  position: sticky;
   top: 0;
   width: 100%;
-  z-index: 998;
+  box-shadow: 0 rem(7) rem(8) rgb(40, 38, 34);
+  z-index: 999;
 
   // Hamburger open styles
   &.open {
@@ -202,9 +203,9 @@
   background-color: var(--nwcGreen);
   width: 100%;
 
-  @include breakpoint-down(medium) {
-    padding: rem(20);
-  }
+  // @include breakpoint-down(medium) {
+  //   padding: rem(20);
+  // }
 
   &__list {
     display: flex;
