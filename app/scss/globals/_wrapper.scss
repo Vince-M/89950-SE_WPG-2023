@@ -4,3 +4,11 @@
   width: min(100% - rem(40), rem(1200));
   margin-inline: auto;
 }
+
+.text {
+
+  &__container {
+    width: min(100% - rem(40), rem(740));
+    margin-inline: auto;
+  }
+}

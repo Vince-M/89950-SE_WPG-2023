@@ -41,3 +41,10 @@ body {
     border: 1px solid;
   }
 }
+
+hr {
+  color: var(--darkGreen);
+  background-color: var(--darkGreen);
+  height: rem(2);
+  margin-bottom: rem(60);
+}
