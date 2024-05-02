@@ -52,6 +52,9 @@
   }
 
   &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     @include breakpoint-down(small) {
       text-align: center;
