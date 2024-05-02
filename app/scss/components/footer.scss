@@ -1,7 +1,7 @@
 @use "../util" as *;
 
 .footer {
-  background-color: var(--nwcGreen);
+  background-color: var(--darkGreen);
   display: flex;
   padding-top: rem(45);
   padding-bottom: rem(20);
@@ -87,10 +87,6 @@
       color: var(--white);
       font-weight: 500;
       cursor: pointer;
-
-      &:hover {
-        text-decoration: underline;
-      }
     }
 
     &--head {
@@ -103,6 +99,10 @@
   }
 
   &__media {
+    font-family: var(--font-header);
+    font-size: rem(16);
+    font-weight: 500;
+    color: var(--white);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -115,11 +115,11 @@
     }
 
     p {
-      font-size: rem(14);
-      color: var(--white);
+      margin-bottom: 0;
     }
 
     &--links {
+      font-size: rem(16);
       @include breakpoint-down(small) {
         display: flex;
         flex-direction: column;
