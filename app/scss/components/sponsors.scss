@@ -211,6 +211,12 @@
       }
     }
   }
+  
+  &__url {
+    font-family: var(--font-header);
+    color: var(--darkGreen);
+  }
+
 }
 
 .unilever-logo {

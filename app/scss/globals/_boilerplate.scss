@@ -25,6 +25,21 @@ body {
   padding: 0;
 }
 
+.breadcrumbs {
+  margin-top: rem(16);
+}
+
+.breadcrumb {
+  font-family: var(--font-header);
+  font-size: rem(14);
+  font-weight: 500;
+  color: var(--lightGrey);
+
+  &__current {
+    font-weight: 700;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   left:     -10000px;
