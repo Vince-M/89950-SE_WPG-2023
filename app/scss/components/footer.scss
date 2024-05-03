@@ -49,6 +49,7 @@
     ul {
       margin-top: 0;
       padding-left: 0;
+      font-size: rem(16);
 
       li {
         list-style: none;
@@ -75,13 +76,20 @@
   }
 
   &__menu {
+    font-family: var(--font-header);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-end;
     flex: 2;
+    gap: rem(40);
     align-items: flex-start;
     margin-bottom: rem(20);
+
+    @include breakpoint-down(small) {
+      gap: 0;
+      justify-content: space-between;
+    }
 
     a {
       color: var(--white);
@@ -90,10 +98,9 @@
     }
 
     &--head {
-      font-family: var(--font-display);
       font-weight: 700;
       color: var(--white);
-      font-size: rem(22);
+      font-size: rem(18);
       margin-bottom: 0;
     }
   }

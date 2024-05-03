@@ -5,10 +5,11 @@
   font-family: var(--font-header);
   font-size: rem(20);
   font-weight: 500;
-  padding: rem(12) rem(25);
+  line-height: rem(22);
+  padding: rem(9) rem(24) rem(7);
   border-radius: rem(5);
   text-transform: uppercase;
-  letter-spacing: .5px;
+  letter-spacing: 1px;
 
   &__contact a {
     background: linear-gradient(var(--yellow) 0 5%, var(--black));
