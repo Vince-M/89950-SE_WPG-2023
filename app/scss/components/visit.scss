@@ -1,0 +1,52 @@
+@use '../util' as *;
+
+.fullWidth {
+
+  &__section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: rem(60);
+
+    &--hotelBKGD {
+      background-color: var(--darkGreen);
+    }
+
+    &--camps, 
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+
+    &--innerWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    &--text {
+      width: 80%;
+      padding-left: 3.75rem;
+      text-align: left;
+      color: var(--white);
+    }
+  }
+}
+
+.fullWidth__section--textOuter {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.fullWidth__section--textRight {
+  justify-content: flex-end;
+}
