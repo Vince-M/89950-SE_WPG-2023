@@ -8,7 +8,7 @@
     justify-content: center;
     text-align: center;
     background-color: var(--darkGreen);
-    padding: rem(20) 0;
+    padding: rem(20) rem(10);
     color: var(--white);
     margin-bottom: rem(60);
 
@@ -132,14 +132,10 @@
     justify-content: space-between;
     gap: rem(20);
     text-align: center;
-    padding: rem(20);
+    padding: rem(20) 0;
 
     &--logos img {
-      width: 65%;
-
-      @include breakpoint-down(small) {
-        width: 75%;
-      }
+      width: 100%;
     }
   }
 
@@ -185,7 +181,7 @@
       }
 
       @include breakpoint-down(small) {
-        flex: 45%;
+        flex: 40%;
       }
     }
   }
