@@ -14,6 +14,13 @@
     align-items: center;
     margin-bottom: rem(60);
 
+    @include breakpoint-down(small) {
+      display: block;
+      height: 100%;
+      overflow: visible;
+      position: relative;
+    }
+
     &--hotelBKGD {
       background-color: var(--darkGreen);
     }
@@ -32,11 +39,35 @@
 
     &--text {
       width: 80%;
-      padding-left: 3.75rem;
       text-align: left;
-      color: var(--white);
+
+      @include breakpoint-down(small) {
+        width: 100%;
+      }
+    }
+
+    &--img {
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      flex: 1;
+      height: rem(500);
+      width: 50%;
+
+      @include breakpoint-down(small) {
+        height: rem(300);
+        width: 100%;
+      }
+    }
+
+    &--hotel {
+      background-image: url('../img/hotel_entrance_2400x650.jpg');
     }
   }
+}
+
+.hotel {
+  color: var(--white);
 }
 
 .fullWidth__section--textOuter {

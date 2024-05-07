@@ -188,7 +188,7 @@
 
   &__mealSponsors {
     flex-wrap: wrap;
-    gap: rem(100);
+    gap: rem(32);
 
     @include breakpoint-down(medium) {
       margin-top: rem(20);

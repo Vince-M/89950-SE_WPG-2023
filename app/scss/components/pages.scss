@@ -39,6 +39,7 @@
 .trade-show {
   transition: filter .25s ease-in-out;
   filter: grayscale(0%);
+  margin-bottom: rem(10);
 }
 
 .conference:hover,
@@ -98,5 +99,13 @@ a.track_link:hover {
 
 .concert-support {
   margin-bottom: rem(10);
+}
+
+.concert {
+
+  &__banner {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
