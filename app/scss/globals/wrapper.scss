@@ -15,9 +15,12 @@
 
 .inner-container {
   width: 80%;
-  max-width: 1200px;
+  // max-width: 1200px;
   position: relative;
-  padding: 1.875rem 0;
+  // padding: 1.875rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @include breakpoint-down(small) {
     margin: 0 auto;

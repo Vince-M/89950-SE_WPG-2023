@@ -25,6 +25,10 @@
       background-color: var(--darkGreen);
     }
 
+    &--comfortBKGD {
+      background-color: var(--darkBlue);
+    }
+
     &--camps, 
     &--reverse {
       flex-direction: row-reverse;
@@ -40,9 +44,16 @@
     &--text {
       width: 80%;
       text-align: left;
+      margin-left: rem(30);
 
       @include breakpoint-down(small) {
         width: 100%;
+        margin-left: 0;
+      }
+
+      h2 {
+        font-size: rem(43);
+        font-weight: 500;
       }
     }
 
@@ -63,10 +74,19 @@
     &--hotel {
       background-image: url('../img/hotel_entrance_2400x650.jpg');
     }
+
+    &--comfort {
+      background-image: url('../img/hotel_banquet_2400x650.jpg');
+    }
+
+    &--restaurant {
+      background-image: url('../img/hotel_restaurant_2400x650.jpg');
+    }
   }
 }
 
-.hotel {
+.hotel,
+.comfort {
   color: var(--white);
 }
 
@@ -80,4 +100,15 @@
 
 .fullWidth__section--textRight {
   justify-content: flex-end;
+}
+
+h3.hours {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.menus a {
+  color: var(--white);
+  text-decoration: underline;
 }
