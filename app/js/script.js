@@ -1,8 +1,8 @@
 console.log("Hello");
-console.log("hi there");
+console.log("hi");
 
 const btnHamburger = document.querySelector("#btnHamburger");
-const body = document.querySelector("body");
+// const body = document.querySelector("body");
 const header = document.querySelector(".header");
 const overlay = document.querySelector(".overlay");
 const nav__list = document.querySelector(".nav__list");
