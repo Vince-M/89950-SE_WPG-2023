@@ -39,6 +39,10 @@
       justify-content: center;
       align-items: flex-start;
       flex-direction: column;
+
+      @include breakpoint-down(small) {
+        padding-top: rem(30);
+      }
     }
 
     &--text {
@@ -51,10 +55,7 @@
         margin-left: 0;
       }
 
-      h2 {
-        font-size: rem(43);
-        font-weight: 500;
-      }
+
     }
 
     &--img {
@@ -102,11 +103,11 @@
   justify-content: flex-end;
 }
 
-h3.hours {
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 0;
-}
+// h3.hours {
+//   font-size: 20px;
+//   font-weight: 500;
+//   margin-bottom: 0;
+// }
 
 .menus a {
   color: var(--white);
