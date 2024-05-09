@@ -1,5 +1,31 @@
 @use '../util' as *;
 
+.pages {
+
+  &__heading,
+  &__subhead {
+    color: var(--darkGreen);
+    font-family: var(--font-header);
+    font-weight: 500;
+  }
+
+  &__content {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 880px;
+  }
+}
+
+.content {
+
+  &__logo {
+
+    &--city {
+      margin-bottom: rem(40);
+    }
+  }
+}
+
 .intro {
   margin-top: rem(40);
   margin-bottom: rem(60);
@@ -106,6 +132,15 @@ a.track_link:hover {
   &__banner {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: rem(60);
+
+    @include breakpoint-down(small) {
+      flex-direction: column;
+      padding: rem(40) rem(10);
+    }
   }
 }
 

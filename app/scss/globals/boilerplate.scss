@@ -16,6 +16,20 @@ img {
   display: block;
 }
 
+a,
+a:visited,
+a:active,
+a:hover {
+  color: var(--font-body);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a[aria-current="true"] {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
 body {
   font-family: var(--font-body);
   color: var(--black);
@@ -26,7 +40,7 @@ body {
 }
 
 .breadcrumbs {
-  margin-top: rem(16);
+  margin: rem(16) 0 rem(40);
 }
 
 .breadcrumb {

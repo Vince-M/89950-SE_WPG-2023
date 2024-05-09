@@ -143,7 +143,6 @@
   &__furTrader,
   &__mealSponsors {
     flex-wrap: wrap;
-    // gap: rem(40);
     margin-bottom: rem(40);
 
     &--logos {
@@ -164,13 +163,15 @@
     filter: grayscale(100%);
   }
 
+  &__norWester,
   &__furTrader {
     flex-wrap: wrap;
     gap: rem(40);
 
     @include breakpoint-down(medium) {
-      margin-top: rem(20);
-      margin-bottom: rem(20);
+      // margin-top: rem(20);
+      margin-bottom: rem(40);
+      border-bottom: 1px solid var(--darkGreen);
     }
 
     &--logos {

@@ -9,7 +9,9 @@
   padding: rem(9) rem(24);
   border-radius: rem(5);
   text-transform: uppercase;
+  text-decoration: none;
   letter-spacing: 1px;
+  white-space: nowrap;
 
   &__contact a {
     background: linear-gradient(var(--yellow) 0 5%, var(--black));
@@ -17,6 +19,7 @@
     border: 1px solid var(--yellow);
     color: var(--white);
     margin-left: rem(20);
+    text-decoration: none;
 
     @include breakpoint-down(small) {
       margin-left: 0;
@@ -40,6 +43,7 @@
     background: linear-gradient(var(--yellow) 0 60%, var(--black));
     border: 1px solid var(--white);
     transition: color 200ms ease-in-out;
+    text-decoration: none;
     margin-left: 0;
   }
 }

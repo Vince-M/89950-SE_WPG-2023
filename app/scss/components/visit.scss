@@ -103,13 +103,28 @@
   justify-content: flex-end;
 }
 
-// h3.hours {
-//   font-size: 20px;
-//   font-weight: 500;
-//   margin-bottom: 0;
-// }
-
 .menus a {
   color: var(--white);
   text-decoration: underline;
+}
+
+.stay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: rem(40);
+}
+
+.stay h2 {
+  font-family: var(--font-header);
+  color: var(--darkGreen);
+  font-size: rem(48);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: rem(40);
+
+  @include breakpoint-down(small) {
+    font-size: rem(32);
+  }
 }
