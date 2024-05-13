@@ -12,7 +12,7 @@
   &__content {
     margin-right: auto;
     margin-left: auto;
-    max-width: 880px;
+    max-width: rem(660);
   }
 }
 
@@ -125,6 +125,10 @@ a.track_link:hover {
   max-width: rem(490);
 }
 
+.concert-series {
+  width: 100%;
+}
+
 .index-info {
   background-color: var(--darkGreen);
   max-width: rem(700);
@@ -141,6 +145,17 @@ a.track_link:hover {
   }
 }
 
+.concert-info {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  justify-content: space-between;
+  max-width: 43.75rem;
+  padding: 1.25rem;
+  width: 100%;
+}
+
 .concert-name {
   padding: 0 rem(10);
 }
@@ -150,6 +165,13 @@ a.track_link:hover {
 }
 
 .concert {
+
+  &__bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   &__banner {
     display: flex;
@@ -164,5 +186,9 @@ a.track_link:hover {
       padding: rem(40) rem(10);
     }
   }
+}
+
+.bandKnot {
+  margin-bottom: rem(40);
 }
 
