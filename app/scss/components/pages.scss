@@ -24,6 +24,28 @@
       margin-bottom: rem(40);
     }
   }
+
+  &__photo {
+    margin-bottom: rem(60);
+
+    &--halfWidth {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      gap: rem(10);
+      justify-content: space-between;
+      margin-bottom: rem(10);
+    }
+
+    &--fullWidth {
+      margin-bottom: 2.5rem;
+      margin-top: .625rem;
+    }
+  }
+
+  &__photos {
+    overflow: hidden;
+  }
 }
 
 .intro {

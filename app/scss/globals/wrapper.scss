@@ -27,3 +27,14 @@
     width: 90%;
   }
 }
+
+.container {
+  margin: 0 auto;
+  max-width: 75rem;
+  width: 80%;
+  
+  &__content {
+    margin-bottom: rem(60);
+
+  }
+}
